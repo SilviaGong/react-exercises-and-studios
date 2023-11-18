@@ -1,9 +1,16 @@
 function ClickedButton() {
-  return;
+  function handleButton() {
+    alert("You are clicking this pin!");
+  }
+  return (
+    <button id="clickButton" onClick={handleClick}>
+      click
+    </button>
+  );
 }
 
 export default ClickedButton;
 
 //create alert to inform user that the pin has been saved
-//create button 
+//create button
 //import styling and assign correct className clickedButton
