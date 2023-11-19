@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css';
 import RecipeDescription from "../../studio1/src/components/Description.jsx";
+import RecipeIngredients from "../src/components/Ingredients.jsx"
+import RecipePhoto from "../src/components/Photos.jsx"
 
 function App() {
 
@@ -8,7 +10,11 @@ function App() {
     <>
       <div className="App">
         <div>
-          <RecipeDescription />
+          <RecipePhoto />
+          <div>
+            <RecipeDescription />
+            <RecipeIngredients />
+          </div>
         </div>
       </div>
     </>
