@@ -1,9 +1,24 @@
-import recipedata from "./recipe.json";
+// components/RecipeName.jsx
+import React from 'react';
+import recipeData from './recipe.json';
 
 function RecipeName() {
-  return recipedata;
+  return (
+    <div>
+      {recipeData.map((recipe, key) => (
+        <h1 key={key}>{recipe.name}</h1>
+      ))}
+    </div>
+  );
 }
 
-export default RecipeName;
 
-//import return the name of the recipe as a level 1 header
+// function RecipeName() {
+//   const recipesName = recipeData.map((recipe, key) => (
+//     <h1 key={key}>{recipe.name}</h1>
+//   ));
+//   return <div>{recipesName}</div>;
+// }
+
+
+export default RecipeName;

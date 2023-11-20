@@ -1,16 +1,17 @@
+// components/ClickedButton.jsx
+import React from 'react';
+import './styling.css';
+
 function ClickedButton() {
-  function handleButton() {
-    alert("You are clicking this pin!");
-  }
+  const handleRemove = () => {
+    alert('You are removing this pin from your board!');
+  };
+
   return (
-    <button id="clickButton" onClick={handleClick}>
-      click
+    <button id="clickedButton" onClick={handleRemove}>
+      Saved
     </button>
   );
 }
 
 export default ClickedButton;
-
-//create alert to inform user that the pin has been saved
-//create button
-//import styling and assign correct className clickedButton
