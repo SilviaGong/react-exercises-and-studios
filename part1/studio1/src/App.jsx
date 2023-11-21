@@ -10,7 +10,7 @@ function App() {
     <>
       <div className="App">
         <div>
-          <RecipePhoto />
+          <RecipePhoto className="recipePhotoBlock" />
           <div>
             <RecipeDescription />
             <RecipeIngredients />
