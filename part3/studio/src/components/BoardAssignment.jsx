@@ -20,17 +20,17 @@ export default function BoardAssignment() {
    const handleChange = (event) => {
       setName(event.target.value);
    }
-   const board = boards.map((board, index) => (
-      <li key={index}>{board}</li>
-   ));
 
    return (
       <div style={{ paddingTop: "50px" }}>
          <label>Save to Board: </label>
          <select value={boardName} onChange={handleChange}>
-            <option value={board.value}>{board.label}</option>
+            {boards.map((board) => (
+               <option key={board.value} value={board.value}>
+                  {board.label}
+               </option>
+            ))}
          </select>
-
          <p>Saved to {boardName}!</p>
       </div>
    );
