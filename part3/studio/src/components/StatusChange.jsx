@@ -21,10 +21,7 @@ export default function StatusChange() {
             <input type="submit" onClick={handleSubmit} />
             <div>{notes}</div>
          </form>
-
-         <p>My Recipe Notes aren't here!</p>
-
-         <p>I have not tried this recipe!</p>
+         {recipeStatus ? <p>Recipe status is true. Display a different message here.</p> : null}
       </div>
    );
 }
